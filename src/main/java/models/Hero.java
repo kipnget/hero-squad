@@ -40,7 +40,9 @@ public class Hero {
     public static void clearAllHero(){
         instances.clear();
     }
-   
+    public int getmId(){
+        return mId;
+    }
     public static Hero findById(int id){
         return instances.get(id-1);
     }
