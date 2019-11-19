@@ -27,8 +27,3 @@ dependencies {
 
 }
 
-test {
-	testLogging {
-			exceptionFormat ='full' events "passed", "skipped", "failed" 
-    } 
-}
