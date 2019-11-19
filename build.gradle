@@ -9,10 +9,17 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 mainClassName = 'App'
+applicationName = 'herosquad'
+task stage (dependsOn:['clean','installDist'])
 
+test {
+	testLogging {
+			exceptFormat ='full' events "passed","skipped","failed"
+	}
+}
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -20,4 +27,6 @@ dependencies {
     compile "com.sparkjava:spark-core:2.6.0"
     compile "com.sparkjava:spark-template-handlebars:2.5.5"
     compile 'org.slf4j:slf4j-simple:1.7.21'
+    compile 'com.sparkjava:spark-template-velocity:2.5.5' 
+
 }
