@@ -10,12 +10,12 @@ sourceCompatibility = 1.8
 
 mainClassName = 'App'
 
-applicationName = 'herosquad'
-task stage (dependsOn:['clean','installApp'])
+applicationName = 'hero-squad'
+task stage (dependsOn:['clean','installDist'])
 
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -26,4 +26,5 @@ dependencies {
     compile 'com.sparkjava:spark-template-velocity:2.5.5' 
 
 }
+
 
