@@ -12,11 +12,7 @@ mainClassName = 'App'
 applicationName = 'herosquad'
 task stage (dependsOn:['clean','installDist'])
 
-test {
-	testLogging {
-			exceptFormat ='full' events "passed","skipped","failed"
-	}
-}
+
 
 repositories {
     jcenter()
