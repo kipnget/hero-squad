@@ -10,7 +10,7 @@ sourceCompatibility = 1.8
 
 mainClassName = 'App'
 applicationName = 'herosquad'
-task stage (dependsOn:['clean','installDist'])
+task stage (dependsOn:['clean','installApp'])
 
 
 
