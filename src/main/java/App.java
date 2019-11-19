@@ -18,7 +18,6 @@ public class App {
             port =4567;
         }
         port(port);
-
         staticFileLocation("/public");
         get("/",(request, response) -> {
             Map<String,Object> model = new HashMap<>();
@@ -48,7 +47,7 @@ public class App {
             return new ModelAndView(model, "squad-details.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //adding hero baby
+        //adding hero
         get("/hero", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "hero-form.hbs");
