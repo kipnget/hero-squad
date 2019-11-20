@@ -7,7 +7,7 @@ Once the application runs, the user can add or view squads. The user can view an
 being in only one squad at a time.
 
 ### Setup
-* This is the [live link]( )
+* This is the [live link]( This is a java application that allows the user to create squads and add heroes to the squad . )
 
 
 
